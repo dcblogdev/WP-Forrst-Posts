@@ -157,7 +157,7 @@ function WP_Forrst_Load_Posts(){
                                     <td><span>Comments:</span> <a href="#"><?php echo $data['resp'][$i]['comment_count'];?> Comments</a></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><span>Categories:</span><i><?php echo str_replace(",",", ",$data['resp'][$i]['tag_string']);?></i></td>
+                                    <td colspan="2"><span>Categories:</span><i><a href="http://forrst.com/posts/tagged?with=<?php echo str_replace(",",", ",$data['resp'][$i]['tag_string']);?>" target="_blank"><?php echo str_replace(",",", ",$data['resp'][$i]['tag_string']);?></a></i></td>
                                 </tr>       
                             </table>
                             <div class="line"></div>
