@@ -10,7 +10,7 @@ The posts from Forrst are cached to avoid any API limits. The cached posts are s
 Installation
 ------
 1. Upload `wp-forrst-posts` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
+2. Activate the plugin through the `Plugins` menu in WordPress.
 3. Enter your Forrst username on the options page in `settings/WP Forrst Posts`.
 4. Place `[wp_forrst_posts]` in the page you want the posts to be displayed.
 
