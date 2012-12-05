@@ -16,18 +16,22 @@ Installation
 
 Frequently Asked Questions
 ------
-= I don't see any posts =
+### I don't see any posts
 
 Make sure you have saved your username in the plugin options page and it is correct.
 
-= Some of my posts are missing =
+### Some of my posts are missing
 
 Only posts marked as public will be displayed. 
 
 Manifest
 ------
 Contributors: David Carr, Stefan Cosma
+
 Requires Wordpress at least: 3.0
+
 Tested up to: 3.4.1
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
