@@ -12,7 +12,7 @@ Installation
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Enter your Forrst username on the options page in settings/WP Forrst Posts
-4. Place [wp_forrst_posts] in the page you want the posts to be displayed
+4. Place `[wp_forrst_posts]` in the page you want the posts to be displayed
 
 Frequently Asked Questions
 ------
