@@ -97,6 +97,7 @@ function WP_Forrst_Init(){
 //add shortcode to its hook.
 add_shortcode('wp_forrst_posts','WP_Forrst_Load_Posts');
 
+//function to get the file contents from the forrstdata.php file using curl
 function curl_file_get_contents($url){
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
