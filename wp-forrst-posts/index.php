@@ -145,38 +145,35 @@ function WP_Forrst_Load_Posts(){
 
                         <?php 
                         if($data['resp'][$i]['post_type'] == 'snap'){                    
-                            echo '<p style="text-align:center;"><a href="'.$data['resp'][$i]['post_url'].'" target="blank"><img style="display:inline;" src="'.$data['resp'][$i]['snaps']['mega_url'].'" class="attachment" alt="" /></a>';
+                            echo '<p style="text-align:center;"><a href="'.$data['resp'][$i]['post_url'].'"><img style="display:inline;" src="'.$data['resp'][$i]['snaps']['mega_url'].'" class="attachment" alt="" /></a>';
                         }
                         ?>        
                         
                         
                         <!-- Begin Meta Info -->
                         <div class="meta">
-                            <table class="meta-info">
-                                <tr>
-                                    <td><span>Date:</span> <?php echo date('jS \of F Y', strtotime($data['resp'][$i]['created_at']));?></td>
-                                    <td><span>Comments:</span> <a href="#"><?php echo $data['resp'][$i]['comment_count'];?> Comments</a></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><span>Categories:</span>
+                            <div class="meta-info">
+                                <p>
+                                    Date: <?php echo date('jS \of F Y', strtotime($data['resp'][$i]['created_at']));?>
+                                    | Comments: <?php echo $data['resp'][$i]['comment_count'];?> Comments
+                                    | Categories:
                                         <i>
                                         <?php
                                             $tag_array = explode(',', $data['resp'][$i]['tag_string']);
 
                                             foreach ($tag_array as $tag) {
-                                                echo '<a href="http://forrst.com/posts/tagged?with=' . $tag . '" target="_blank">' . $tag . '</a>, ';
+                                                echo '<a href="http://forrst.com/posts/tagged?with=' . $tag . '">' . $tag . '</a>, ';
                                             }
                                         ?>
-                                        </i>
-                                    </td>
-                                </tr>       
-                            </table>
+                                        </i>                                    
+                                </p>       
+                            </div>
                             <div class="line"></div>
                         </div>
                         <!-- End Meta Info -->
                         
                         <?php echo $data['resp'][$i]['formatted_description'];?>
-                         <a href="<?php echo $data['resp'][$i]['post_url'];?>" target="blank" class="more">Continue Reading and comment on Forrst →</a>
+                         <a href="<?php echo $data['resp'][$i]['post_url'];?>" class="more">Continue Reading and comment on Forrst →</a>
                     </div>
                     <!-- End Post -->
              
