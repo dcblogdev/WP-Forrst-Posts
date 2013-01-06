@@ -4,14 +4,16 @@
      */
  
     class Caching {
- 
-        var $filePath = "";
+ 	
+ 	//set variable to be used by the class
+        var $filePath = ""; 
         var $apiURI = "";
  
         function __construct($filePath, $apiURI) {
             //check if the file path and api URI are specified, if not: break out of construct.
             if (strlen($filePath) > 0 && strlen($apiURI) > 0) {
-                //set the local file path and api path
+               
+               //set the local file path and api path
                 $this->filePath = $filePath;
                 $this->apiURI = $apiURI;
  
@@ -74,6 +76,7 @@
  
         function saveFile($data) {
 
+            //save the data to the filePath if file cannot be opened kill the script and show an error 
             $fp = fopen($this->filePath, 'w+')or die('cannot open file'); 
 			fwrite($fp, base64_encode(serialize($data)));
 			fclose($fp);
