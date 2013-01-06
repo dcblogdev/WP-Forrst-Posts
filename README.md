@@ -26,7 +26,7 @@ Only posts marked as public will be displayed.
 
 Manifest
 ------
-Contributors: David Carr, Stefan Cosma
+Contributors: [David Carr](https://github.com/daveismyname), [Stefan Cosma](https://github.com/stefanbc)
 
 Requires Wordpress at least: 3.0
 
