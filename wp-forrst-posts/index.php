@@ -26,7 +26,8 @@ License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2
 */
 
 class WP_Forrst_Posts {
-
+    
+    //define constants for the plugin
     const plugin_name = 'WP Forrst Posts';
     const plugin_slug = 'wp_forrst_posts';
     const class_slug = 'WP_Forrst_Posts';
@@ -73,7 +74,7 @@ class WP_Forrst_Posts {
     }
 
     public function main_section_cb(){
-        //optional
+        //optional callback
 
     }
 
@@ -140,7 +141,7 @@ function WP_Forrst_Load_Posts(){
 
                     <!-- Begin Post -->
                     <div class="post">
-                        <h1 class="title"><a href="<?php echo $data['resp'][$i]['post_url'];?>" target="blank"><?php echo $data['resp'][$i]['title'];?></a></h1>
+                        <h1 class="title"><a href="<?php echo $data['resp'][$i]['post_url'];?>"><?php echo $data['resp'][$i]['title'];?></a></h1>
 
                         <?php 
                         if($data['resp'][$i]['post_type'] == 'snap'){                    
